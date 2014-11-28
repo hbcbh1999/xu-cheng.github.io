@@ -1,0 +1,26 @@
+title: XU CHENG
+author: Xu Cheng
+url: http://xuc.me
+twitter_username: _xucheng_
+github_username: xu-cheng
+google_analytics_id:
+
+markdown: kramdown
+exclude:
+  - .gitignore
+  - Gemfile
+  - README.md
+safe: true
+lsi: false
+
+permalink: /blog/:title.html
+
+navigation:
+  - title: home
+    link: /
+  - title: research
+    link: /research.html
+  - title: blog
+    link: /blog/
+  - title: contact
+    link: /contact.html
