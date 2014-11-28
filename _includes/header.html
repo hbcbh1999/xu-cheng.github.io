@@ -13,7 +13,13 @@
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav navbar-right">
         {% for nav in site.navigation %}
-          <li class="{% if url == nav.link %}active{% endif %}"><a href="{{ nav.link }}">{{ nav.title }}</a></li>
+          <li 
+            {% if url == nav.link or (nav.link == '/blog/' and page.date) %}
+              class="active"
+            {% endif %}
+          >
+            <a href="{{ nav.link }}">{{ nav.title }}</a>
+          </li>
         {% endfor %}
       </ul>
     </div>
