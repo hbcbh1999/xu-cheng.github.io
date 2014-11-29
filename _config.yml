@@ -13,14 +13,14 @@ exclude:
 safe: true
 lsi: false
 
-permalink: /blog/:title
+permalink: /blog/:title/
 
 navigation:
   - title: home
     link: /
   - title: research
-    link: /research.html
+    link: /research/
   - title: blog
     link: /blog/
   - title: contact
-    link: /contact.html
+    link: /contact/
