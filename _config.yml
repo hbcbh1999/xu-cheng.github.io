@@ -13,7 +13,7 @@ exclude:
 safe: true
 lsi: false
 
-permalink: /blog/:title.html
+permalink: /blog/:title
 
 navigation:
   - title: home
