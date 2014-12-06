@@ -1,0 +1,15 @@
+{% assign tags = include.tags %}
+
+{% if tags.size > 0 %}
+
+  &nbsp;|&nbsp;
+
+  {% if tags.size == 1 %}
+    <i class="fa fa-tag"></i>
+  {% else %}
+    <i class="fa fa-tags"></i>
+  {% endif %}
+
+  {{ tags | join: ',&nbsp;' }}
+
+{% endif %}

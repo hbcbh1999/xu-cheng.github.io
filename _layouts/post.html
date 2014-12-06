@@ -4,7 +4,9 @@ layout: page
 
 <div class="page-header">
 <h2 class="with-tagline">{{ page.title }}</h2>
-<p class="tagline">{{ page.date | date_to_long_string }}</p>
+<p class="tagline">{{ page.date | date_to_long_string }}
+{% include listtags.html tags=page.tags %}
+</p>
 </div>
 
 <article class="full">
