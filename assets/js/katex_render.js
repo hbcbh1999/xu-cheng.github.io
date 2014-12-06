@@ -1,10 +1,10 @@
- $("script[type='math/tex']").replaceWith(
+$("script[type='math/tex']").replaceWith(
   function(){
     var tex = $(this).text();
     return "<spawn class=\"inline-equation\">" + 
            katex.renderToString(tex) +
            "</spawn>";
- });
+});
 
 $("script[type='math/tex; mode=display']").replaceWith(
   function(){
@@ -12,4 +12,4 @@ $("script[type='math/tex; mode=display']").replaceWith(
     return "<div class=\"equation\">" + 
            katex.renderToString("\\displaystyle "+tex) +
            "</div>";
- });
+});
