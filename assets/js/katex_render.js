@@ -1,9 +1,9 @@
 $("script[type='math/tex']").replaceWith(
   function(){
     var tex = $(this).text();
-    return "<spawn class=\"inline-equation\">" + 
+    return "<span class=\"inline-equation\">" + 
            katex.renderToString(tex) +
-           "</spawn>";
+           "</span>";
 });
 
 $("script[type='math/tex; mode=display']").replaceWith(
