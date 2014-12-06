@@ -1,10 +1,11 @@
 ---
 layout: null
+title : Atom Feed
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>{{ site.url }}//</id>
-  <title>{{ site.name }}</title>
+  <id>uuid:{{ site.uuid }}</id>
+  <title>{{ site.title }}</title>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <link rel="alternate" href="{{ site.url }}/"/>
   <link rel="self" href="{{ site.url }}/blog.xml"/>
@@ -15,7 +16,7 @@ layout: null
   
   {% for post in site.posts limit:5 %}
   <entry>
-    <id>{{ site.url }}{{ post.url }}</id>
+    <id>uuid:{{ site.uuid }}{{ post.id }}</id>
     <title type="html">{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <link rel="alternate" href="{{ site.url }}{{ post.url }}"/>
