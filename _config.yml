@@ -7,12 +7,16 @@ github_username: xu-cheng
 google_analytics_id: UA-4293090-10
 
 markdown: kramdown
+highlighter: pygments
 exclude:
   - .gitignore
   - Gemfile
   - README.md
-safe: true
 lsi: false
+gems:
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 permalink: /blog/:title/
 
