@@ -11,6 +11,7 @@ highlighter: pygments
 exclude:
   - .gitignore
   - Gemfile
+  - Gemfile.lock
   - README.md
 lsi: false
 gems:
