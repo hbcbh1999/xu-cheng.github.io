@@ -12,6 +12,7 @@ exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
+  - Rakefile
   - README.md
 lsi: false
 gems:
