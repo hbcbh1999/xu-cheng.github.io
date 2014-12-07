@@ -16,6 +16,7 @@ title: Blog
 {% for post in site.posts %}
 <article class="preview">
     <p class="tagline">
+        <i class="fa fa-calendar"></i>&nbsp;
         {{ post.date || date_to_long_string }}
         {% include listtags.html tags=post.tags %}
     </p>
