@@ -16,3 +16,11 @@
       font-size: 13px;
     }
 }
+
+.contact-list {
+    font-family: Monaco, monospace;
+}
+
+.contact-list-item {
+    color: #4582ec;
+}
