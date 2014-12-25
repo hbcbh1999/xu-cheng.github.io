@@ -4,7 +4,7 @@ https://keybase.io/xucheng
 
 I hereby claim:
 
-  * I am an admin of http://xuc.me
+  * I am an admin of https://xuc.me
   * I am xucheng (https://keybase.io/xucheng) on keybase.
   * I have a public key with fingerprint CCE0 112A 1CCD E168 5DBA  86C4 C2A3 860F A0B4 59CE
 
@@ -14,7 +14,7 @@ To claim this, I am signing this object:
     "body": {
         "client": {
             "name": "keybase.io node.js client",
-            "version": "0.7.2"
+            "version": "0.7.3"
         },
         "key": {
             "fingerprint": "cce0112a1ccde1685dba86c4c2a3860fa0b459ce",
@@ -24,21 +24,21 @@ To claim this, I am signing this object:
             "username": "xucheng"
         },
         "merkle_root": {
-            "ctime": 1416989099,
-            "hash": "3a3555a3f5649d9eaefba44931ef9f36a44e09a2b442ffb3772706ef663441de1289e52f0a72dccc0e0ffc1befd907ada23b68bdaddb7627b688e3413f669792",
-            "seqno": 98751
+            "ctime": 1419529305,
+            "hash": "190df3ce28261c36cca0ba524e3a67f2eac4ed3223ba7d68e4c4aec8482bfd387498f05303a7a08122b8270cded2a2f9a02c370a7bf4ec1129f3d04e8da3fe2c",
+            "seqno": 116645
         },
         "service": {
             "hostname": "xuc.me",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1416989129,
+    "ctime": 1419529867,
     "expire_in": 157680000,
-    "prev": "f613f435008cd093247123ebad5af57e280115064dbd6ddefeb15df90e899a99",
-    "seqno": 11,
+    "prev": "fae1ec3c6dbf995bcb6f58df55a33cecc23fb8a863082f144dfd8aba3dee93f2",
+    "seqno": 13,
     "tag": "signature"
 }
 
@@ -47,25 +47,25 @@ with the aforementioned key, yielding the PGP signature:
 -----BEGIN PGP MESSAGE-----
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
 
-owFVUltsVFUUnamFYlO1mEAa4YPciBIh43nc1xlMTGls/JBoSFV81PE89pm5dHrv
-cO+dQkOmBhKoA/EV+KmvECWkRsKHNSYaA9g/aEDUmPggxkejIZXEkkZjG8Rzmxrk
-fJ3H2uustfZ+9bZbcu35yXcP3HH0w6cu5Kcui1xfvfntHktEatgq7rFkNYAwzXYh
-HwSraA3AsOAJFIJoXRgpKOxI1i1hNllDECdBFBoUKngFYjU2ZfCsWAdhGeJaHGRc
-lpSAMCYcS6kAu76jBPddaUvCqe8izZGwHSbBUFaiJL3pV2uRsxQoc9tDujN8bzfa
-YvA9D5m3+uID15hrRxOiKcYSaYkwOFS4trR9DxDKgAnES5Z212UFwnImdxDigSqU
-4iha9CzTIENgG7vMZ4gxI4gnFVNDOXUch1PtuDZTDDhowW2bUQyaaeqaPSDGibBt
-orWgnkc85IJ2XWrb2LgmPgOHaMQ9oqSUCJDWEgvQiiGPK06MXF8orpTwXOKZgw/U
-xtQwMI8R4yCBnWFkFZnvObiRHeOhwGRmZGeh3fBWGMyCrMVRGsmoau4qaVorZm7T
-4VqG2QWitFRdOi6CUJlm/b+bGfvNSWBikoDdtSCGUpAhHM/1kVnZPzBkOLVrpNrU
-QciXCjFKbA8TCoIrx3TGA+KbCXCQayuhXKVAg8CO0gyBzxhn7IY/jI1QXjacSVAO
-eVqPwWo082tbc/n23PJlLdm85tpv7fxviL9Rbdfl+fk1o4fHPxu6vOPQo2cnOrf2
-v9T2yidPT/at/PTz+5p/zV04Nay6jpNI3s4vnm72HJ2/a/pgrfdgG1448MLqXyfK
-1bedsTtfn9rvXzw2snf0p7MdL09v3ntujlZm03v/vtT9fcc9R1b0r/5q5soH28ob
-t89aI2PfrUoWrl57/8ybXzzyMTzR+suT9c3p7DNd763/sbFyX9Oam+x+sWVstHjs
-/PzOP66mD646ET7+s/vGwp+zza+nGn3V6luvjTw7svX+uY303P7lHy07bD3Qe6ZY
-v7Rh7dTdp6e/XLF9/J9ky67f+x7esP5ksq//0KmWH6LWx2auD4ytaaHbnp+4duXI
-c+MznYO/dXHRkX/nXw==
-=O+nA
+owFVUn1oVWUcvne2S46i6IsGkeOESLmu78f5eM/EwNYH9IejUMRJXt6P33t3urvn
+3M45u22OQZQ1g01NKwyD3KZRjLDJYCByowgrhOEfyiIVk4FrkmQZ9UdSvWcZ6fvX
++/H8nt/zPL93z53Lci35LyfevOvg9JbZ/MlFkdv4wYaDg5aI1IDVMWjJ3gDCNNuF
+vApWh1WBAcETKAZRWxgpKL6UtN3AtFt1iJMgCg0KFb0itYbaM3hWrIOwDHEtDjIu
+S0pAGBOOpVSAXeYowZkrbUk4ZS7SHAnb8SUYyp4oSW/pai1xlgJlbjvJ+gz/zHr0
+pMF3Pm3e+pYeuMZcO5oQTTGWSEuEwaHCtaXNPEAoAyYQ37DU3yd7ICxncqsQV3qh
+FEfRkmeZBhkC29h3iE+RYwTxpMfUYB8pTSUQRlwsqSulEc0dYgPlrqcJcGmDooRQ
+wT3lMjCtOUhmMyK0osyzfaaRQxHlHkcMEyIY8ZDJQxFOtM8RkdRD3BPaBmnC8jVV
+yAamONVApHGQwMthZMRh17Wdoewc1wMTmtGdpfa/uWI1S7IWR2kko15z15OmtaQj
+85sO1DLQKyBK/5Z/DCURhMqM6+Z5YgO9NQvmeu0W9NeCGEpBhnA8lyGzskZQN5ya
+AwZJpauE9n1HSOFqhyntOJya4KQkVAtm5k4RIxrbttKKccGpAvCpJjc5pEYoLxvO
+JCiHPO2LwRp6K//Qbbl8S67Q3JT92FzL8rv/+8Y/9N2eO9yxcsfJ6fnt17pmJkeP
+DW8j+z9s/PXjb9HIyhevj246fGFs4ey6dR95u7vnDgyPHJeF1qn7o/CXBy6tPdN1
+5O1VgzMXUeX5mStzTatXkOFfx670vzG10PjmzNjkrsv75z5pqjo77fnxVaS9+9Tn
+W6Yn993TtX3HMe/xFe5efvHb2nOb6icePVtpTDW/1rz3qfOX6msWNn73+h8bnhj/
+Ozc7OsFx99Y1Y1+819p69NCJ2dkLL3zv2WGhce/OU682eh/Zs/ndq8vX/nRH1/zV
+Efnwgz+vbj5y7s9z+955rFr+qjJ+ulCv7t5VaPv0vvTZA/bp9/sH8hPn8eavO5dN
+ptcud3YvXl9MP/u9ZW70Hw==
+=igUp
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
