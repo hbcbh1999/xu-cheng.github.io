@@ -131,3 +131,22 @@ task :publish do
     puts "Please choose a draft by the assigned number."
   end
 end
+
+# rake compress
+desc "Compress js and css"
+task :compress do
+  css_files = Dir["assets/css/*.css"].reject { |f| f =~ /\.min\.css$/ }
+  js_files = Dir["assets/js/*.js"].reject { |f| f =~ /\.min\.js$/ }
+  css_files.each do |f|
+    target = "#{File.dirname(f)}/#{File.basename(f, ".css")}.min.css"
+    rm target if File.exist?(target)
+    print f, " => ", target, "\n"
+    system "yuicompressor", "--type", "css", "-o", target, f
+  end
+  js_files.each do |f|
+    target = "#{File.dirname(f)}/#{File.basename(f, ".js")}.min.js"
+    rm target if File.exist?(target)
+    print f, " => ", target, "\n"
+    system "yuicompressor", "--type", "js", "-o", target, f
+  end
+end
