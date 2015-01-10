@@ -16,6 +16,7 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
+  - vendor
 lsi: false
 gems:
   - jekyll-mentions
