@@ -11,6 +11,7 @@ highlighter: pygments
 exclude:
   - .gitignore
   - .travis.yml
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - Rakefile
