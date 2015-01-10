@@ -6,3 +6,8 @@ gem 'pygments.rb'
 gem 'jekyll-mentions'
 gem 'jekyll-redirect-from'
 gem 'jekyll-sitemap'
+
+group :test do
+  gem 'html-proofer'
+  gem 'rake'
+end
