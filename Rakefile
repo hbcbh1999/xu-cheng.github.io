@@ -30,14 +30,14 @@ end
 # rake build
 desc "Build the site"
 task :build do
-  sh "jekyll", "build"
+  sh "bundle", "exec", "jekyll", "build"
 end
 
 # rake watch
 # rake watch["drafts"]
 desc "Serve and watch the site"
 task :watch, :draft do |t, args|
-  shell_args = %w[jekyll serve --watch]
+  shell_args = %w[bundle exec jekyll serve --watch]
   shell_args << "--draft" if args[:draft] == "draft"
   begin
     # no backtrace
@@ -141,12 +141,23 @@ task :compress do
     target = "#{File.dirname(f)}/#{File.basename(f, ".css")}.min.css"
     rm target if File.exist?(target)
     print f, " => ", target, "\n"
-    system "yuicompressor", "--type", "css", "-o", target, f
+    sh "yuicompressor", "--type", "css", "-o", target, f
   end
   js_files.each do |f|
     target = "#{File.dirname(f)}/#{File.basename(f, ".js")}.min.js"
     rm target if File.exist?(target)
     print f, " => ", target, "\n"
-    system "yuicompressor", "--type", "js", "-o", target, f
+    sh "yuicompressor", "--type", "js", "-o", target, f
   end
+end
+
+# rake test
+desc "Html Proofer"
+task :test do
+  sh "bundle", "exec", "jekyll", "build", "--drafts"
+  require "html/proofer"
+  HTML::Proofer.new("./_site",
+      :parallel => { :in_threads => 4 },
+      :favicon => true
+  ).run
 end
