@@ -23,15 +23,15 @@ So how to make KaTeX work in the Jekyll? [Will Drevo][jekyll-and-katex-willdrevo
 
 First of all, we need to configure Jekyll using kramdown as markdown parser and mathjax as kramdown's math engine. In result, inline math equation will be rendered into a script block with "math/tex" as type. Like this: `<script type="math/tex"> tex code </script>`. Similarly the display style math equation will turn into a script block with "math/tex; mode=display" as type. Like this: `<script type="math/tex; mode=display"> tex code </script>`.
 
-{% gist cb91d3284971250cb14e _config.yml %}
+{% gist xu-cheng/cb91d3284971250cb14e _config.yml %}
 
 Secondly, let us put the required resources into the html head.
 
-{% gist cb91d3284971250cb14e head.html %}
+{% gist xu-cheng/cb91d3284971250cb14e head.html %}
 
 Finally, with the power of jQuery and KaTeX, we replace all the tex code block to rendered high quality equations fast. But remember, this javascript should be loaded at the end of html file.
 
-{% gist cb91d3284971250cb14e katex_render.js %}
+{% gist xu-cheng/cb91d3284971250cb14e katex_render.js %}
 
 Here's the final result of rendered equation in below. Also you can do whatever custom you want in css file using class `inline-equation` and `equation`.
 
