@@ -3,8 +3,6 @@ sudo: false
 cache: bundler
 rvm:
  - 2.2
-before_install:
- - bundle install
 script:
  - bundle exec rake test
 notifications:
