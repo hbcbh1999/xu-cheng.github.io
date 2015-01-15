@@ -24,3 +24,7 @@
 .contact-list-item {
     color: #4582ec;
 }
+
+footer > hr {
+    border-top-color: #dddddd;
+}
