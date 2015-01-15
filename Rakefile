@@ -138,6 +138,7 @@ end
 # rake compress
 desc "Compress js and css"
 task :compress do
+  next unless system "which", "yuicompressor"
   css_files = Dir["assets/css/*.css"].reject { |f| f =~ /\.min\.css$/ }
   js_files = Dir["assets/js/*.js"].reject { |f| f =~ /\.min\.js$/ }
   css_files.each do |f|
