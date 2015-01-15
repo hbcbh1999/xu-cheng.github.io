@@ -28,7 +28,7 @@ def transform_to_slug(title, extension)
 end
 
 # rake build
-# rake build["drafts"]
+# rake build["draft"]
 desc "Build the site"
 task :build, [:draft] => :compress do |task, args|
   shell_args = %w[bundle exec jekyll build]
@@ -37,7 +37,7 @@ task :build, [:draft] => :compress do |task, args|
 end
 
 # rake watch
-# rake watch["drafts"]
+# rake watch["draft"]
 desc "Serve and watch the site"
 task :watch, [:draft] => :compress do |task, args|
   shell_args = %w[bundle exec jekyll serve --watch]
@@ -87,7 +87,7 @@ end
 # rake post
 # rake post["title"]
 desc "Create a post in _posts"
-task :post, :title do |t, args|
+task :post, :title do |task, args|
   title = args[:title]
   while title.nil? or title.empty?
     print "Input new post title: "
@@ -101,7 +101,7 @@ end
 # rake draft
 # rake draft["title"]
 desc "Create a draft in _drafts"
-task :draft, :title do |t, args|
+task :draft, :title do |task, args|
   title = args[:title]
   while title.nil? or title.empty?
     print "Input new draft title: "
