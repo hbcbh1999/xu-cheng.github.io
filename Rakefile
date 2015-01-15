@@ -28,15 +28,18 @@ def transform_to_slug(title, extension)
 end
 
 # rake build
+# rake build["drafts"]
 desc "Build the site"
-task :build do
-  sh "bundle", "exec", "jekyll", "build"
+task :build, [:draft] => :compress do |task, args|
+  shell_args = %w[bundle exec jekyll build]
+  shell_args << "--draft" if args[:draft] == "draft"
+  sh *shell_args
 end
 
 # rake watch
 # rake watch["drafts"]
 desc "Serve and watch the site"
-task :watch, :draft do |t, args|
+task :watch, [:draft] => :compress do |task, args|
   shell_args = %w[bundle exec jekyll serve --watch]
   shell_args << "--draft" if args[:draft] == "draft"
   begin
@@ -154,7 +157,7 @@ end
 # rake test
 desc "Html Proofer"
 task :test do
-  sh "bundle", "exec", "jekyll", "build", "--drafts"
+  Rake::Task[:build].invoke("draft")
   require "html/proofer"
   HTML::Proofer.new("./_site",
       :parallel => { :in_threads => 4 },
