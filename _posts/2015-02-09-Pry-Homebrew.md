@@ -19,14 +19,11 @@ make sure it has execute attribute and can be found in the `PATH`. That's it. Ru
 {% highlight ruby linenos %}
 #!/usr/bin/env ruby
 
-require "pry"
-require "pathname"
-
-$:.unshift Pathname.new(`brew --prefix`.strip)/"Library/Homebrew"
-
+$:.unshift ENV["HOMEBREW_LIBRARY_PATH"]
 require "global"
 require "formula"
 require "keg"
+require "pry"
 
 class Symbol
   def f(*args)
@@ -50,6 +47,11 @@ else
   Pry.start
 end
 {% endhighlight %}
+
+**Update (2015/2/16)**
+
+I found using `HOMEBREW_LIBRARY_PATH` to locate Homebrew library path is a better idea.
+This can be useful if you have multi Homebrew in your system.
 
  [pry]: http://pryrepl.org
  [pry-top-5]: http://www.bignerdranch.com/blog/my-top-5-pry-features/
