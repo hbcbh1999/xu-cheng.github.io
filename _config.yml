@@ -28,8 +28,6 @@ permalink: /blog/:title/
 navigation:
   - title: home
     link: /
-  - title: research
-    link: /research/
   - title: blog
     link: /blog/
   - title: contact
