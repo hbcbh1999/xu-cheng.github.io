@@ -1,13 +1,14 @@
-title: XU CHENG
+name: XU CHENG
 author: Xu Cheng
 url: https://xuc.me
-uuid: fc6e15bc-f87d-4081-83d3-ac681a90498e # Using for atom id (blog.xml)
 twitter_username: _xucheng_
 github_username: xu-cheng
 google_analytics_id: UA-4293090-10
 
 markdown: kramdown
 highlighter: pygments
+feed:
+  path: blog.xml
 exclude:
   - .gitignore
   - .travis.yml
@@ -19,6 +20,7 @@ exclude:
   - vendor
 lsi: false
 gems:
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
