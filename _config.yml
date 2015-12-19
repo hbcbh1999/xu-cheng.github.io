@@ -21,6 +21,7 @@ exclude:
 lsi: false
 gems:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
